@@ -30,7 +30,7 @@
 <body>
 	
 	<!-- Document body related tags -->
-	<header>
+	<header role="tda-main-header">
 
 	</header>
 	
