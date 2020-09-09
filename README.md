@@ -58,10 +58,10 @@
 ````
 A typical HTML document will have the following structure:
 
-	1. Document declaration tag
+	1. Document declaration
 	2. Document root tag
-	3. Document header related tags
-	4. Document body related tags
+	3. Document head and its related tags
+	4. Document body and its related tags
 
 We will be study the head and body related tags in subsequent section. but before we go any futher, let's just look at what is document declaration.
 
