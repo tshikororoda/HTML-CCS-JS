@@ -34,12 +34,13 @@
 		Document body related tags 
 	-->
 	<header role="tda-main-header">
-		
+		<span id="brand"> Document Appropriate Skelton </span>
 	</header>
 	
 	<main id="tda-main">
 		<section>
-			<h1> Document Appropriate Skelton </h1>
+			<h3> welcome to HTML </h3>
+			<p> This the document structure </p>
 		</section>	
 	<main>	
 	
