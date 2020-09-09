@@ -40,7 +40,7 @@
 	<main id="tda-main">
 		<section>
 			<h3> welcome to HTML </h3>
-			<p> This the document structure </p>
+			<p> This is the document structure </p>
 		</section>	
 	<main>	
 	
