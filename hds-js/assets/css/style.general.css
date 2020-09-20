@@ -1,0 +1,45 @@
+/*-		
+
+|_______________________________|
+|                               |
+|         [ GLOBAL STYLE ]      |
+|_______________________________|	
+
+-*/
+        
+
+body /* use of [Type] Sector */
+{
+	/* Shorthand background property is nomaly used 
+		when we want to set all properties at once */
+	background: rgba(0, 0, 255, 0.3) url(./img/img-00.png) 600px 40px no-repeat fixed;
+	
+	/* Text effects */
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #d2d2d2;
+}
+
+main
+{
+	width: 100%;
+	padding-top: 200px;
+}
+
+p::after /* use of [psudo] selector */
+{
+	content: " Congradulation, you have successful added CSS.";
+	color: #333;
+	text-decoration: underline;
+	font-size: 13pt;
+}
+
+footer
+{
+	border: 0px solid;
+	padding: 0px;
+	position: absolute;
+	bottom: 0px;
+	width : 1080px;
+	color: #000;
+}

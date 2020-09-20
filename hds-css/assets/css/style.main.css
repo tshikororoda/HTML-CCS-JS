@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+/* import css file */
+@import url("./style.rest.css");
+@import url("./style.general.css");
+
+
+
+/* HEADER */
+header[role="tda-main-header"]
+{
+	/* box/element effects */
+	border : 0px solid teal;
+	background-color: #ccc;
+	box-shadow: 0 10px 10px -16px #000; /* shadow only bottom */
+	
+	/* Text effects */
+	text-align: center;
+}
+
+#brand /* use of [id] selector */
+{
+	
+	font-size: 26pt;
+	color: #3399cc;
+	padding: 05px;
+}
+
+
+main section h3 /* use of [descendant] selector */
+{
+	color: #000;
+}
+
+main section > p /* use of [child] selector if <p> is direct child of <section> */
+{
+	color: #000;
+	border-left  : 01px solid #330066;
+	border-bottom: 01px solid #330066;
+	padding-left: 05px;
+}
+
+main section h3::after
+{
+	 content: "(code with tshikororo da)";
+	 text-transform: uppercase;
+	 text-decoration: underline;
+	 font-size: 16pt;
+	 color: #990;
+}
+
+#tda-copyright::after
+{
+	content: " codewithtshikororoda";
+	font-style: italic;
+}
+
+/*
+ _______________________________________________________________________________________
+|                                                                                       |
+|							[ BREAK SCREEN POINT ]										|
+|_______________________________________________________________________________________|
+
+*/
+
+/* WIDE DESKTOP LAYOUT 
+----------------------------------------------- */
+
+@media only screen and (min-width: 1176px) {
+	
+	body{
+		
+		width : 1080px;
+		margin: 0px auto;
+	}
+
+} /* CLOSE WIDE LAYOUT */
+
+
+/* TABLET LAYOUT 
+----------------------------------------------- */
+
+@media only screen and (min-width: 768px) and (max-width: 991px)
+{
+	
+	body{
+		width: 712px;
+	}
+
+} /* CLOSE TABLET LAYOUT */
+
+
+/* MOBILE LAYOUT (PORTRAIT/320PX) 
+----------------------------------------------- */
+
+@media only screen and (max-width: 767px){
+	
+	body{
+		width: 320px;
+		padding: 0px;
+	}
+}	
+
+/* WIDE MOBILE LAYOUT (LANDSCAPE/480PX) 
+----------------------------------------------- */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	body {
+		
+		width	: 480px;
+		padding	: 0px;
+	}
+	
+} /* CLOSE WIDE MOBILE LAYOUT */
+
+
+/*	RETINA OVERRIDES 
+----------------------------------------------- */
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2) {
+	
+	
+} /* CLOSE RETINA MEDIA QUERY */

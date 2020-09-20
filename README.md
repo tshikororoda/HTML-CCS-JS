@@ -1,4 +1,4 @@
-# HTML5 - CSS
+# HTML5 - CSS - JAVASCRIPT
 
 ### HTML DOCUMENT STRUCTURE
 
@@ -8,13 +8,16 @@
 <!DOCTYPE html> <!-- document declaration -->
 <html dir="ltr" lang="en">
 	<head> 
-		<!-- 
-			Document header related tags 
-		-->
+<!-- 
+ _______________________________________________________________________________________ 
+|																						|			
+|					[ Document header related tags here ]								|	
+|_______________________________________________________________________________________|
 
-		<meta charset		="utf-8" />
-		<meta http-equiv	="X-UA-Compatible" 	content ="IE=edge" />
-		<meta name		="viewport" 		content ="width=device-width; initial-scale=1.0" />
+-->
+		<meta charset    ="utf-8" />
+		<meta http-equiv ="X-UA-Compatible"	content="IE=edge" />
+		<meta name		 ="viewport"		content="width=device-width; initial-scale=1.0" />
 		
 		<title> Document Appropriate Skelton </title>
 
@@ -22,39 +25,49 @@
 				[ CSS ] 
 			-->
 
-		<link 	rel	="stylesheet" 		
-			type	="text/css" 
-			href	="./public/css/style.main.css" 
-			media	="screen" />
+		<link	rel   ="stylesheet"
+				type  ="text/css"
+				href  ="./assets/css/style.main.css"
+				media ="screen" />
 
-		<link 	rel	="shortcut icon"
-			type	="image/ico" 	
-			href	="./favicon.ico" />
+		<link	rel	 ="shortcut icon"
+				type ="image/ico"
+				href ="./favicon.ico" />
+		
 	</head>
 <body>
-	<!-- 
-		Document body related tags 
-	-->
+<!-- 
+ _______________________________________________________________________________________ 
+|																						|			
+|					[ Document body related tags here ]									|	
+|_______________________________________________________________________________________|
+
+-->
 	<header role="tda-main-header">
-		<span id="brand"> Document Appropriate Skelton </span>
+		<span id="brand"> &#39;Document Appropriate Skelton&#39; </span>
 	</header>
 	
-	<main id="tda-main">
+	<main id="tda-main-content">
 		<section>
-			<h3> welcome to HTML </h3>
-			<p> This is the document structure </p>
+			<h3> Welcome to HTML </h3>
+			<p> This is the document structure. </p>
 		</section>	
 	<main>	
 	
-	<footer id="tda-footer">
-		
+	<footer id="tda-main-footer">
+		<span id="tda-copyright">&#169;</span>
 	</footer>
-<!--|---------------------------------------------------------------------------------------|			
-    |				[ JavaScript external ]					    |	
-    |_______________________________________________________________________________________|-->
-			
+	
+<!-- 
+ _______________________________________________________________________________________ 
+|                                                                                       |
+|                            [ JavaScript external ]                                    |
+|                                                                                       |
+|_______________________________________________________________________________________|
+
+-->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-		<script src="public/js/main.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
@@ -85,3 +98,204 @@ Above HTML document stracture uses the following tags
 | `<body>`  | This tag represents the document's body which keeps other HTML tags like `<h1>, <div>, <p>`   etc. |
 | `<h1>`    | This tag represents the heading. |
 | `<p>`     | This tag represents a paragraph. |
+
+***
+
+## ADDING CSS ON HTML DOCUMENT STRUCTURE
+
+### How to associate style sheet to an HTML document?
+	1. Inline   css - We apply css syntax using style attribute on an element.
+	2. Embedded css - We apply css syntax using <style> element. This tag is <Head> related tag.
+	3. External css - We apply css syntax on a separate text file with .css extension. 
+		- We include on HTML document file using <link> tag. or
+		- We include on HTML document file using @Import url("");.
+
+### CSS overriding
+	- Inline style sheet takes highest priority becouse it override Embedded and External style sheet.
+	- Embedded style sheet override External style sheet.
+	- External style sheet takes low priority.
+
+### CSS Syntax is made of three parts
+	- Selector - An element at which css rule will be applied.
+	- Property - An element attribute (All HTML attribute are converted into CSS properties).
+	- Value    - Value assigned to the property. 
+
+### How to applied style rule to an element? 
+
+#### Type selector
+
+```` CSS
+	/* Select and applied style rule at all level 2 heading */
+	h2 {
+	
+	}
+	
+	/* Grouping selector */
+	h1, h2, h3, h4, h5, h6 {
+	
+	}
+````
+
+#### Universal selector
+
+````CSS
+	/* Select and applied style rule at all element */
+	* {
+	
+	}
+````
+
+#### Descendant selector
+
+````CSS
+	/* Select and applied style rule to <a> element only when it lies within div ul li */
+	div ul li a {
+	
+	}
+````
+
+#### Id selector
+
+````CSS
+	/* Select and applied style rule to the element with id attribute set to tda-main-header */
+	#tda-main-header {
+	
+	}
+	
+	/* Select and applied style rule to the <h2> element with id attribute set to tda-main-header */
+	h2#tda-main-header {
+	
+	}
+	
+	/* Select and applied style rule to the <h2> element when <h2> lies within an element with id attribute set to tda-main-header  */
+	#tda-main-header h2 {
+	
+	}
+	
+	/* We can also combined various id selector */
+	
+````
+
+#### Class selector
+
+````CSS
+	/* Select and applied style rule to the element with class attribute set to clear */
+	.clear {
+	
+	}
+	
+	/* Select and applied style rule to the <h1> element with class attribute set to clear */
+	h1.clear {
+	
+	}
+	
+	/* Select and applied style rule to the <h2> element when <h2> element lies within an element with class attribute set to .clear  */
+	.clear h2 {
+	
+	}
+	
+	/* We can also combined various class selector */
+	
+````
+
+#### Child selector
+
+````CSS
+	/* Select and applied style rule to <p> element if <p> is direct child of <body> element. */
+	body > div {
+	
+	}
+````
+
+#### Attribute selector
+
+````CSS
+	/* Select and applied style rule to <input> element with attribute type set to text */
+	input[type="text"] {
+	
+	}
+
+````
+***
+
+## ADDING JAVASCRIPT ON HTML DOCUMENT STRUCTURE
+
+#### How to place JavaScript in an HTML document?
+
+```` html
+	
+	<!-- JavaScript placed in the <head> element section. -->
+	<head>
+		<script>
+			alert("javascript placed in the <head> element");
+		</script>
+	</head>
+	
+	<!-- JavaScript placed in the <body> element section. -->
+	<body>
+		<script>
+			document.write("javascript placed in the <body> element");
+		</script>
+	<body>
+	
+	<!-- External javascript souce file -->
+	<script src="./js/main.js"></script> 
+````
+
+#### How to *run* JavaScript `functions` when the document is loaded?
+
+`Program:` This program get the current year and display the obtained results to copyright statement.
+
+Pseudo code:
+
+	Create function called thisYear(). 
+	Declare local variable (within the function)  currentDate, year, thisYear and tdaCopyright.
+	Implimate the object Date() using keyword new.
+	Get the current year. 
+	Create a text node.
+	Get/select an element where output message shoud be append to.
+	Append/insert the output results to the select element.
+	Print the text string appended only with slateblue color. 
+
+```` js
+	
+	"use strict";
+
+	function thisYear(){
+	
+		let currentDate, year, tdaCopyright, thisYear; // Declaring variables 
+		
+		currentDate = new Date(); // Create an object for Date()
+		year 		= currentDate.getFullYear(); // Get the current year
+		thisYear 	= document.createTextNode(year); // Create text node 
+		
+		tdaCopyright = document.querySelector('#tda-copyright'); // Get/select the element to insert content into
+		tdaCopyright.parentNode.insertBefore(thisYear, tdaCopyright); //  Insert current year into an element selected
+		
+			/* CSS */
+		tdaCopyright.parentNode.style.color = 'slateblue'; // print text in slateblue color only. 
+	}
+	
+	
+	// Run this functions when the document is loaded
+	window.onload = function(){ // #01
+		
+		thisYear();
+	}
+	
+/*
+ The code below does the samething #01 does. 
+
+// Run this functions when the document is loaded
+	window.onload(
+		
+		thisYear()
+	);
+*/
+	
+````
+```` html 
+	<span id="tda-copyright">&#169;</span>
+````
+
+
