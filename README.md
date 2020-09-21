@@ -28,13 +28,13 @@
 			-->
 
 		<link	rel   ="stylesheet"
-				type  ="text/css"
-				href  ="./assets/css/style.main.css"
-				media ="screen" />
+			type  ="text/css"
+			href  ="./assets/css/style.main.css"
+			media ="screen" />
 
-		<link	rel	 ="shortcut icon"
-				type ="image/ico"
-				href ="./favicon.ico" />
+		<link	rel  ="shortcut icon"
+			type ="image/ico"
+			href ="./favicon.ico" />
 		
 	</head>
 <body>
