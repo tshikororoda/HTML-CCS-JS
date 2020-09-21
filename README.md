@@ -8,16 +8,18 @@
 <!DOCTYPE html> <!-- document declaration -->
 <html dir="ltr" lang="en">
 	<head> 
-<!-- 
+<!--
+
  _______________________________________________________________________________________ 
-|																						|			
-|					[ Document header related tags here ]								|	
+|                                                                                       |
+|                           [ Document header related tags here ]                       |
+|                                                                                       |
 |_______________________________________________________________________________________|
 
 -->
 		<meta charset    ="utf-8" />
 		<meta http-equiv ="X-UA-Compatible"	content="IE=edge" />
-		<meta name		 ="viewport"		content="width=device-width; initial-scale=1.0" />
+		<meta name	 ="viewport"		content="width=device-width; initial-scale=1.0" />
 		
 		<title> Document Appropriate Skelton </title>
 
@@ -38,8 +40,9 @@
 <body>
 <!-- 
  _______________________________________________________________________________________ 
-|																						|			
-|					[ Document body related tags here ]									|	
+|                                                                                       |
+|                           [ Document body related tags here ]                         |
+|                                                                                       |
 |_______________________________________________________________________________________|
 
 -->
@@ -70,7 +73,7 @@
 		<script src="assets/js/main.js"></script>
 
 	</body>
-</html>
+</htm>
 ````
 A typical HTML document will have the following structure:
 
